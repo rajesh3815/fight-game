@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+#instruct{
+    width: 290px;
+    height: 580px;
+    background-color: #d999fd;
+    float: right;
+    font-family: sans-serif;
+    margin: 5px;
+}

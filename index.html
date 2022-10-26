@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="instruct">
+     <h3>INSTRUCTION:-</h3>
+
+     <ul>
+          <li>player1
+            <ol type="I">
+                <li>press 'W' to jump</li>
+                <li>press 'D' to move forward</li>
+                <li>press 'A' to backward </li>
+                <li>press 'SPACEBAR' to Attack</li>
+            </ol>
+          </li>
+          <li>player2
+            <ol type="I">
+                <li>press 'ARROW-UP' to jump</li>
+                <li>press 'ARROW-LEFT' to move forward</li>
+                <li>press 'ARROW-RIGHT' to backward </li>
+                <li>press 'ARROW-DOWN' to Attack</li>
+            </ol>
+          </li>
+     </ul>
+    </div>
+    <div style="position: relative; display: inline-block;">
+        <div style="position: absolute; display: flex; width:100%;align-items: center; padding: 20px;">
+            <!--player-->
+            <div style="position: relative;width: 100%; display: flex; justify-content: flex-end;
+            border-top: 4px solid white;
+            border-left: 4px solid white;
+            border-bottom: 4px solid white;border-radius: 7px;">
+                <div style="background-color: #BE185D; height: 30px; width: 100%;"></div>
+                <div id="player-hl" style="position:absolute; background:#C084FC;top: 0;right: 0; bottom: 0;width:100%;">
+                </div>
+            </div>
+            <!--timer-->
+            <div id="timer" style="
+            background-color:#15803D;
+            border: 4px solid rgb(255, 255, 255);
+             height:50px; 
+             width:100px;
+            flex-shrink: 0; 
+            border-radius: 16px;
+            display: flex; 
+            justify-content: center;
+             align-items: center;">10</div>
+            <!--enemy Health-->
+            <div style="position: relative; width: 100%; border-top: 4px solid white;
+            border-right: 4px solid white;
+            border-bottom: 4px solid white;
+            border-radius: 7px;">
+                <div style="background-color: #881337; height: 30px;"></div>
+                <div id="enemy-hl" style="position:absolute; background:#C084FC;top: 0;right: 0; bottom: 0;left: 0;"></div>
+            </div>
+        </div>
+        <div id="score" style="position:absolute ;color:aliceblue ; display: none; 
+        justify-content: center;
+         align-items: center;
+         top: 0;right: 0;bottom: 0;left: 0;"></div>
+        <canvas> </canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/uti.js"></script>
+    <script src="js/cls.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
